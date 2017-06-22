@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>分享到朋友圈</title>
+</head>
+<body>
+分享到朋友圈
+
+<script type="text/javascript" src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+<script type="text/javascript" src='https://cdn.bootcss.com/js-sha1/0.4.1/sha1.min.js'></script>
+<script type="text/javascript" src='nonce.js'></script>
+<script type="text/javascript">
+var timextamp = new Date();
+var nonce = genNonce();
+wx.config({
+  debug: true,
+  appId: 'wx5fcb7878b2e10ecc',
+  timestamp: timextamp,
+  nonceStr: nonce,
+  signature: '',
+  jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage']
+});
+</script>
+</body>
+</html>

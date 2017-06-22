@@ -5,8 +5,8 @@ require_once('sqlite.class.php');
 
 class Utils {
 
-  static private $appid = 'appid';
-  static private $secret = 'secret';
+  static private $appid = 'wx5fcb7878b2e10ecc';
+  static private $secret = 'd87dd0e4348b147ba6ae50b585924ca5';
 
   static public function somethingExpire($timextamp,$expire_in) {
     $now = time();
